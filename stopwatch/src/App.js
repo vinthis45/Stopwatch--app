@@ -35,9 +35,11 @@ export default function App() {
   return (
     <div className="App">
       <h1>Stopwatch</h1>
-      <p>Time : {format(timer)}</p>
-      <button onClick={toggleHandler}>{isActivated ? "Stop" : "Start"}</button>
-      <button onClick={reset}>Reset</button>
+      <p>Time: {format(timer)}</p>
+      <div>
+        <button onClick={toggleHandler}>{isActivated ? "Stop" : "Start"}</button>
+        <button onClick={reset}>Reset</button>
+      </div>
     </div>
   );
 }
